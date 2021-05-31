@@ -1,0 +1,32 @@
+<!-- <div class="header fixed-header" id="header" [ngClass]="{'mat-elevation-z5' : true, 'sticky' : isSticky}" >
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-6 ">
+        <h1><a href="" class="title "> Spring Blog</a></h1>
+      </div> 
+  
+      <div class="col-md-6 col-6 control">
+         <a href="/register"  id="register" *ngIf="!loggedIn" class="register btn">Register</a>
+         <a href="/add-post"  id="addPost"  *ngIf="loggedIn" class="new-post">Add Post</a>
+         <a href="/logout"    id="logout"   *ngIf="loggedIn" class="logout btn" routerLink=""  (click)="logOutUser()">Logout</a>
+         <a href="/login"     id="login"    *ngIf="!loggedIn" class="login btn" routerLink="/login" routerLinkActive="active">Login</a>
+      </div>
+    </div>
+  </div>
+</div> -->
+<mat-toolbar class="tool">
+  <a routerLink=""><span>Spring Blog</span></a> 
+  <span class="example-spacer"></span>
+  <button class="logout btn" *ngIf="loggedIn" [matMenuTriggerFor]="appMenu" >{{ this.userName}}</button>
+  <a href="/register"  id="register" *ngIf="!loggedIn" class="register btn">Register</a>
+  <a href="/add-post"  id="addPost"  *ngIf="loggedIn" class="new-post btn">Add Post</a>
+  <a href="/logout"    id="logout"   *ngIf="loggedIn" class="logout btn" routerLink=""  (click)="logOutUser()">Logout</a>
+  <a href="/login"     id="login"    *ngIf="!loggedIn" class="login btn" routerLink="/login" routerLinkActive="active">Login</a>
+</mat-toolbar>
+
+<mat-menu  #appMenu="matMenu" >
+  <button mat-menu-item routerLink="/profile" routerLinkActive="active">profile</button>
+  <hr class="my4">
+  <button mat-menu-item>saved post</button>
+  <hr class="my4">
+</mat-menu>

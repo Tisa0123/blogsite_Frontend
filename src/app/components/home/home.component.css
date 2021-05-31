@@ -1,0 +1,282 @@
+
+header.masthead {
+    position: relative;
+    margin-bottom: 3rem;
+    padding-top: calc(8rem + 57px);
+    padding-bottom: 8rem;
+    background: no-repeat center center;
+    background-color: #6c757d;
+    background-size: cover;
+    background-attachment: scroll;
+  }
+  header.masthead:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(120deg, #1d2671 14%, #c33764 100%);;
+    opacity: 0.5;
+  }
+  header.masthead .page-heading,
+  header.masthead .post-heading,
+  header.masthead .site-heading {
+    color: aliceblue;
+  }
+  header.masthead .page-heading,
+  header.masthead .site-heading {
+    text-align: center;
+  }
+  header.masthead .page-heading h1, header.masthead .page-heading .h1,
+  header.masthead .site-heading h1,
+  header.masthead .site-heading .h1 {
+    font-size: 6rem;
+  }
+  header.masthead .page-heading .subheading,
+  header.masthead .site-heading .subheading {
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.1;
+    display: block;
+    margin-top: 0.625rem;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+  header.masthead .post-heading h1, header.masthead .post-heading .h1 {
+    font-size: 2.25rem;
+  }
+  header.masthead .post-heading .meta,
+  header.masthead .post-heading .subheading {
+    line-height: 1.1;
+    display: block;
+  }
+  header.masthead .post-heading .subheading {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0.75rem 0 2rem;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+  header.masthead .post-heading .meta {
+    font-size: 1.25rem;
+    font-weight: 300;
+    font-style: italic;
+    font-family: "Lora", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+  header.masthead .post-heading .meta a {
+    color: aliceblue;
+  }
+
+  .margin-top{
+    margin-top: -5em;
+  }
+  @media (min-width: 992px){
+  header.masthead {
+      padding-top: 25rem;
+      padding-bottom: 25rem;
+  }
+}
+
+header.masthead .page-heading h1, header.masthead .page-heading .h1,
+header.masthead .site-heading h1,
+header.masthead .site-heading .h1 {
+    font-size: 5rem;
+  }
+  header.masthead .post-heading h1, header.masthead .post-heading .h1 {
+    font-size: 3.5rem;
+  }
+  header.masthead .post-heading .subheading {
+    font-size: 1.875rem;
+  }
+/* team cards */
+  .team-container
+{
+    width:100%;
+    height: auto;
+ 
+}
+.text
+{
+  background: var(--degChange);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+    font-size:5rem;
+    margin-top: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+ 
+}
+.row
+{
+    width: 60%;
+    margin:auto;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-items: center;
+    justify-content: center;
+}
+
+.profile-card
+{
+    /* background: #d4cacd; */
+    /* opacity: 0.5; */
+    /* border-radius: 5em; */
+    width: 25em;
+    height: 37em;
+    /* box-shadow: 3px 3px 3px 3px; */
+    margin: 1.5em 1em -4em 1em;
+    padding: 6em 1em 1em 1em;
+    align-items: center;
+    justify-content: center;
+}
+.profile-content{
+  margin: auto;
+  max-width: 100%;
+  width: 30em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .profile-content
+{
+    padding:15px;
+} */
+
+.profile-image
+{
+  /* width: 20em;
+  height: 20em;
+  border-radius: 50%;
+  margin: 0 0 2em 5em;
+  background:var(--imgBackground);
+  text-align: center; */
+  width: 13em;
+  height: 13em;
+  border-radius: 50%;
+  margin: 0;
+  padding: 0;
+  background: var(--imgBackground);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.desc
+{
+    text-align: center;
+    padding: 1.5em;
+}
+.desc h2
+{
+  /* color: #1d2671; */
+  background:var(--color);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2em;
+}
+.desc p{
+  font-size: 1.5em;
+  line-height: 1.3em;
+  margin-top: 0em;
+  color: var(--paraColor);
+     
+}
+.btn-div
+{
+    text-align: center;
+}
+.btn
+{
+    /* background:var(!important) */
+    color: #ffffff;
+    width: 150px;
+    cursor: pointer;
+    height: 38px;
+    font-size: 13px;
+    font-weight: 600;
+    box-shadow: 3px 3px 3px 3px #e6e6e6;
+    border-radius: 3px;
+    outline:none;
+    border:none;
+    text-transform: uppercase;
+}
+
+svg:not(:root).svg-inline--fa {
+  overflow: hidden;
+  color: white;
+  height: 6em;
+  width: 6em;
+  /* margin: 6em 2.1em 0 1.4em; */
+  /* margin:  6em 2.1em 0 2.4em; */
+}
+
+
+@media(min-width: 768px)
+{
+    .row{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items:flex-end ;
+    }
+   
+}
+@media(max-width: 468px)
+{
+  .row {
+      width: 100%;
+      margin: 0;
+      padding: 0 2em 0 2.5em;
+  }
+  
+    .profile-card
+    {
+       width: 21em;
+      height: 31em;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 0;
+      padding: 0;
+    }
+    .profile-content{
+      margin: auto;
+      max-width: 100%;
+      width: 30em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .profile-image{
+      width: 10em;
+      height: 10em;
+      /* border-radius: 50%; */
+      margin: 2em 2.7em 1.5em 3em;
+      background: var(--imgBackground);
+      text-align: center;
+    }
+    svg:not(:root).svg-inline--fa {
+      max-width: 46%;
+      max-height: 46%;
+    }
+    .text{
+      font-size: 3rem;
+      line-height: 1.3em;
+ 
+}
+.desc{
+  padding: 0em;
+}
+
+}
+
+
+

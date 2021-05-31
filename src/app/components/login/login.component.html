@@ -1,0 +1,32 @@
+<div class="imgcontainer">
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <!-- <div class="imgcontainer">
+        <img src="assets/image/undraw_remotely_2j6y.svg" alt="Image" class="avatar">
+    </div> -->
+  
+    <div class="container">
+      <!-- <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" formControlName="username" name="uname" required>
+  
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" formControlName="password" name="psw" required>
+  
+      <button type="submit">Login</button> -->
+      <mat-form-field class="full-width">
+        <mat-label>UserName</mat-label>
+        <input matInput placeholder="UserName"  formControlName="username" name="uname" required>
+      </mat-form-field>
+      <mat-form-field class="full-width">
+        <mat-label>Password</mat-label>
+        <input matInput type="password" placeholder="Password"  formControlName="password" name="psw" required>
+      </mat-form-field>
+      <button type="submit">Login</button>
+    </div>
+  
+    <div class="container" style="background-color:#f1f1f1">
+          <span class="psw">Forgot <a href="#">password?</a></span> <br>
+          <label for="token" aria-disabled="true" class="token" [ngClass]="success==1?'token_success':'token'" id="token"></label>
+    </div>
+  </form>
+ 
+</div>

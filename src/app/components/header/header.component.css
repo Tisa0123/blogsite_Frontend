@@ -1,0 +1,165 @@
+.example-spacer {
+  flex: 1 1 auto;
+  margin-right: -2em;
+}
+.tool{
+  background: #C33764;  
+  background:var(--color);
+}
+.tool>span{
+  color: aliceblue;
+  padding: 0 2em 0 0;
+}
+.tool a{
+  text-decoration: none;
+}
+.sticky {
+  position: fixed;
+  top: 0px;
+}
+
+
+.fixed-header {
+  position: fixed;
+  z-index:999;
+}
+.mat-elevation-z5 {
+  position: fixed;
+  width: 100%;
+}
+
+.header:hover{
+  opacity: 0.8;
+}
+a{
+  padding: 0;
+  margin: 0 0.5em 0 0.6em;
+  color: aliceblue;
+}
+
+.title{
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.login,.register{
+  float: right;
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.logout,.new-post{
+  float: right;
+  color: aliceblue;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.logout:hover, .new-post:hover{
+  color: aliceblue;
+  text-decoration: none;
+}
+.btn{
+  border: none !important;
+  outline: none !important;
+}
+.mat-menu-item {
+  height: 2.3em;
+  padding: 0 1em;
+  max-width: 100%;
+}
+
+.mat-menu-item {
+  background: transparent;
+  color: var(--menuTextColor);
+}
+.mat-toolbar-row, .mat-toolbar-single-row {
+  min-width: 100%;
+  padding: 1em;
+}
+@media screen and (max-width: 991px) {
+ 
+  .control{
+   display: block;
+   float: left;
+   min-width: 263px;
+   align-content: center;
+   padding: 0;
+   padding-right: 11rem;
+   }
+   .row{
+     display: flex;
+     justify-content: center;
+     width: 100%;
+   }
+   h1{
+    font-size: calc(2rem);
+  }
+  }
+@media screen and (max-width: 540px) {
+ .control{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: row;
+   padding: 0em;
+  }
+  h1{
+    font-size: 1.7em;
+  }
+}
+@media screen and (min-width: 360px) {
+  .control{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 0 0 0 -1em;
+    padding: 0em;
+   }
+   h1{
+     font-size: calc(1.8rem);
+   }
+ }
+
+ @media screen and (min-width: 411px) {
+   h1{
+     font-size: calc(2.3rem);
+   }
+   body{
+     font-size: calc(2.3rem);
+   }
+ }
+
+ 
+
+@media screen and (min-width: 375px){
+h1{
+    font-size: calc(2.1rem);
+}
+}
+
+@media screen and (min-width: 540px){
+  h1{
+      font-size: calc(3.2rem);
+  }
+  }
+
+  @media screen and (max-width: 280px){
+    h1{
+      font-size: 1.4em;
+    }
+    }
+
+  @media screen and (min-width: 533px){
+     h1{
+      font-size: 3em;
+    }
+  }
+
+  @media screen and (min-width: 506px){
+    h1{
+       font-size: 3em;
+    }
+  }
